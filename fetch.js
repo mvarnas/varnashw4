@@ -1,7 +1,16 @@
-fetch('https://jsonplaceholder.typicode.com/users', { 
+
+fetch('https://jsonplaceholder.typicode.com/users'{username});
 	method: 'get' 
 }).then(function(response) { 
-	// process result
+	console.log(username)
 }).catch(function(err) { 
 	// Error, handle err 
 });
+
+Promise.all([ 
+	asyncFunc1(), 
+	asyncFunc2(), 
+]) 
+.then(([result1, result2]) => { 
+	··· 
+}) 
